@@ -1,0 +1,16 @@
+# Robots.txt for Dimgent Technologies
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://dimgent.com/sitemap.xml
+
+# Disallow admin areas (if added in future)
+Disallow: /admin/
+Disallow: /config/
+Disallow: /app/
+Disallow: /vendor/
+
+# Allow assets
+Allow: /assets/

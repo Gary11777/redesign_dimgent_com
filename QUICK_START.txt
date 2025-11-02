@@ -1,0 +1,92 @@
+═══════════════════════════════════════════════════════════════
+  DIMGENT TECHNOLOGIES WEBSITE - QUICK START
+═══════════════════════════════════════════════════════════════
+
+📦 INSTALLATION
+───────────────────────────────────────────────────────────────
+1. composer install
+2. Edit config/app.php (SMTP + reCAPTCHA settings)
+3. Point web server to public/ directory
+
+🚀 LOCAL TESTING
+───────────────────────────────────────────────────────────────
+cd public
+php -S localhost:8000
+
+Visit: http://localhost:8000
+
+📧 SMTP CONFIGURATION (Gmail Example)
+───────────────────────────────────────────────────────────────
+In config/app.php:
+
+'smtp_host' => 'smtp.gmail.com',
+'smtp_port' => 587,
+'smtp_username' => 'your-email@gmail.com',
+'smtp_password' => 'your-16-char-app-password',
+'to_email' => 'info@dimgent.com',
+
+Get App Password: https://myaccount.google.com/apppasswords
+
+🔒 reCAPTCHA SETUP
+───────────────────────────────────────────────────────────────
+1. Register at: https://www.google.com/recaptcha/admin
+2. Choose reCAPTCHA v3
+3. Add keys in config/app.php:
+
+'site_key' => 'your-public-key',
+'secret_key' => 'your-secret-key',
+
+📁 PROJECT STRUCTURE
+───────────────────────────────────────────────────────────────
+app/
+  Controllers/    → Page logic
+  Core/          → Framework classes
+  Helpers/       → Utilities (Mailer, ReCaptcha)
+  Views/         → HTML templates
+
+config/
+  app.php        → All settings here!
+
+public/
+  index.php      → Entry point
+  assets/        → Images, PDFs
+
+🌐 PAGES
+───────────────────────────────────────────────────────────────
+/              → Home
+/products      → Products (Garand 101)
+/services      → Services
+/projects      → Projects
+/contacts      → Contact Form
+/about         → About Us
+
+🔧 PRODUCTION DEPLOYMENT
+───────────────────────────────────────────────────────────────
+In config/app.php, change:
+
+'env' => 'production',
+'debug' => false,
+'url' => 'https://yourdomain.com',
+
+Enable HTTPS redirect in public/.htaccess (uncomment lines 3-5)
+
+⚠️ TROUBLESHOOTING
+───────────────────────────────────────────────────────────────
+Problem: 404 on all pages
+Fix: Enable mod_rewrite, check .htaccess in public/
+
+Problem: Contact form not sending
+Fix: Check SMTP credentials, verify port 587 not blocked
+
+Problem: Images not loading
+Fix: Check public/assets/images/ exists, permissions OK
+
+📚 MORE INFO
+───────────────────────────────────────────────────────────────
+README.md         → Full documentation
+SETUP_GUIDE.md    → Detailed setup steps
+PROJECT_SUMMARY.md → Complete feature list
+
+═══════════════════════════════════════════════════════════════
+  Ready to go! 🚀
+═══════════════════════════════════════════════════════════════

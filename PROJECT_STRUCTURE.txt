@@ -1,0 +1,176 @@
+═══════════════════════════════════════════════════════════════
+  DIMGENT TECHNOLOGIES - PROJECT STRUCTURE
+═══════════════════════════════════════════════════════════════
+
+redesign_dimgent_com/
+│
+├── 📁 app/                         # Application code (MVC)
+│   ├── 📁 Controllers/             # Page controllers
+│   │   ├── HomeController.php      # Home page
+│   │   ├── ProductsController.php  # Products page
+│   │   ├── ServicesController.php  # Services page
+│   │   ├── ProjectsController.php  # Projects page
+│   │   ├── ContactsController.php  # Contacts & form
+│   │   └── AboutController.php     # About page
+│   │
+│   ├── 📁 Core/                    # Framework core
+│   │   ├── Application.php         # Main app class
+│   │   ├── Router.php              # URL routing
+│   │   ├── Controller.php          # Base controller
+│   │   └── View.php                # Template engine
+│   │
+│   ├── 📁 Helpers/                 # Helper classes
+│   │   ├── Mailer.php              # Email handling
+│   │   └── ReCaptcha.php           # reCAPTCHA verify
+│   │
+│   └── 📁 Views/                   # HTML templates
+│       ├── 📁 layouts/
+│       │   └── default.php         # Main layout
+│       ├── 📁 home/
+│       │   └── index.php           # Home view
+│       ├── 📁 products/
+│       │   └── index.php           # Products view
+│       ├── 📁 services/
+│       │   └── index.php           # Services view
+│       ├── 📁 projects/
+│       │   └── index.php           # Projects view
+│       ├── 📁 contacts/
+│       │   └── index.php           # Contacts view
+│       ├── 📁 about/
+│       │   └── index.php           # About view
+│       └── 📁 errors/
+│           ├── 404.php             # Not found page
+│           └── 500.php             # Server error page
+│
+├── 📁 config/                      # Configuration
+│   └── app.php                     # Main config file
+│
+├── 📁 public/                      # Web root (document root)
+│   ├── 📁 assets/
+│   │   ├── 📁 images/              # All images (23 files)
+│   │   └── 📁 pdf/                 # PDF files
+│   ├── .htaccess                   # Apache rewrite rules
+│   ├── index.php                   # Front controller
+│   ├── robots.txt                  # SEO robots file
+│   ├── sitemap.xml                 # SEO sitemap
+│   └── verify.php                  # Installation checker
+│
+├── 📁 vendor/                      # Dependencies
+│   └── autoload.php                # PSR-4 autoloader
+│
+├── 📁 old_version_dimgent_com/     # Original site backup
+│
+├── 📄 composer.json                # Composer config
+├── 📄 .gitignore                   # Git ignore rules
+├── 📄 .env.example                 # Environment template
+│
+└── 📄 Documentation Files
+    ├── START_HERE.md               ⭐ Start with this!
+    ├── QUICK_START.txt             # Fast reference
+    ├── SETUP_GUIDE.md              # Configuration guide
+    ├── README.md                   # Complete docs
+    ├── FEATURES.md                 # Feature list
+    ├── PROJECT_SUMMARY.md          # Project overview
+    ├── DEPLOYMENT_CHECKLIST.md     # Production deploy
+    ├── CHANGELOG.md                # Version history
+    └── PROJECT_STRUCTURE.txt       # This file
+
+═══════════════════════════════════════════════════════════════
+  FILE COUNTS
+═══════════════════════════════════════════════════════════════
+
+Controllers:        6 files
+Core Classes:       4 files
+Helper Classes:     2 files
+View Templates:     13 files
+Config Files:       1 file
+Documentation:      9 files
+Total PHP Files:    35+ files
+Total Images:       23 files
+Total PDFs:         1 file
+
+═══════════════════════════════════════════════════════════════
+  KEY DIRECTORIES
+═══════════════════════════════════════════════════════════════
+
+🌐 Web Root (public/)
+   ↳ Set your web server document root here
+
+🎨 Views (app/Views/)
+   ↳ All HTML templates with Tailwind CSS
+
+⚙️ Config (config/app.php)
+   ↳ SMTP, reCAPTCHA, routes, menu settings
+
+📧 Controllers (app/Controllers/)
+   ↳ Business logic for each page
+
+🖼️ Assets (public/assets/)
+   ↳ Images, PDFs, and static files
+
+═══════════════════════════════════════════════════════════════
+  ROUTING FLOW
+═══════════════════════════════════════════════════════════════
+
+1. User visits URL (e.g., /products)
+2. Apache rewrites to: index.php?url=products
+3. index.php loads Application class
+4. Router matches URL to controller
+5. ProductsController@index executes
+6. Controller renders view
+7. View uses layout template
+8. HTML sent to browser
+
+═══════════════════════════════════════════════════════════════
+  CONFIGURATION FILES
+═══════════════════════════════════════════════════════════════
+
+Primary:     config/app.php
+Environment: .env (copy from .env.example)
+Web Server:  public/.htaccess (Apache)
+Composer:    composer.json
+
+═══════════════════════════════════════════════════════════════
+  DEPENDENCIES
+═══════════════════════════════════════════════════════════════
+
+Composer:
+  └── phpmailer/phpmailer (^6.9)
+
+CDN (loaded in browser):
+  ├── Tailwind CSS v3
+  └── Alpine.js v3
+
+═══════════════════════════════════════════════════════════════
+  ENTRY POINTS
+═══════════════════════════════════════════════════════════════
+
+Development:  public/index.php (via PHP built-in server)
+Production:   public/index.php (via Apache/Nginx)
+Verification: public/verify.php (delete after testing)
+
+═══════════════════════════════════════════════════════════════
+  IMPORTANT NOTES
+═══════════════════════════════════════════════════════════════
+
+✓ Document root MUST point to public/ directory
+✓ Configure SMTP in config/app.php before testing
+✓ Run composer install to get PHPMailer
+✓ Delete verify.php in production
+✓ Enable HTTPS in production (.htaccess)
+✓ Set env to 'production' in config
+
+═══════════════════════════════════════════════════════════════
+  BACKUP & ORIGINAL
+═══════════════════════════════════════════════════════════════
+
+Original site preserved in: old_version_dimgent_com/
+
+Contains:
+- Original HTML files
+- Original CSS
+- Original JavaScript
+- All original images
+- Complete backup for reference
+
+═══════════════════════════════════════════════════════════════
