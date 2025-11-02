@@ -1,0 +1,34 @@
+{
+    "site": {
+        "name": "Dimgent Technologies",
+        "title": "Electronics Development - Dimgent Technologies",
+        "description": "Development of customized electronic devices, electrical equipment and devices. Full cycle of development (from mock-up to finished product). Full product support. Cost effective. Short turn-around times.",
+        "keywords": "developing hardware devices, designing circuit boards, developing customized electronic devices, electric circuits, developing electronic equipment",
+        "email": "info@dimgent.com",
+        "location": "Minsk, Belarus",
+        "language_selector": {
+            "en": "http://www.dimgent.com/index.html",
+            "pl": "http://www.dimgent.pl/index.html",
+            "ru": "http://www.dimgent.ru/index.html",
+            "by": "http://www.dimgent.by/index.html"
+        }
+    },
+    "smtp": {
+        "host": "smtp.example.com",
+        "port": 587,
+        "username": "your-email@example.com",
+        "password": "your-password",
+        "encryption": "tls",
+        "from_email": "info@dimgent.com",
+        "from_name": "Dimgent Technologies"
+    },
+    "recaptcha": {
+        "site_key": "YOUR_RECAPTCHA_SITE_KEY",
+        "secret_key": "YOUR_RECAPTCHA_SECRET_KEY"
+    },
+    "paths": {
+        "images": "old_version_dimgent_com/pic",
+        "data": "old_version_dimgent_com/data1",
+        "projects": "data/projects.json"
+    }
+}
