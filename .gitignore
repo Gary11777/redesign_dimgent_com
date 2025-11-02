@@ -1,0 +1,52 @@
+# Environment variables
+.env
+
+# Configuration files with sensitive data
+config/mail_config.php
+
+# PHPMailer (if installed via Composer)
+includes/vendor/
+includes/composer.lock
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*.bak
+*.swp
+*~
+
+# Uploaded files (if you add upload functionality)
+uploads/
+public/uploads/
+
+# Node modules (if you add build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+dist/
+build/
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
