@@ -1,0 +1,9 @@
+{
+  "smtp_enabled": false,
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 587,
+  "smtp_username": "your-email@gmail.com",
+  "smtp_password": "your-app-password",
+  "from_email": "noreply@dimgent.com",
+  "from_name": "Dimgent Technologies Contact Form"
+}

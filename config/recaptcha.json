@@ -1,0 +1,6 @@
+{
+  "site_key": "your-recaptcha-site-key",
+  "secret_key": "your-recaptcha-secret-key",
+  "enabled": true,
+  "score_threshold": 0.5
+}
