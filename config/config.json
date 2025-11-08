@@ -1,0 +1,31 @@
+{
+    "site": {
+        "name": "Dimgent Technologies",
+        "tagline": "Electronics Development",
+        "location": "Minsk, Belarus",
+        "email": "info@dimgent.com",
+        "description": "Development of customized electronic devices, electrical equipment and devices. Full cycle of development (from mock-up to finished product).",
+        "keywords": "developing hardware devices, designing circuit boards, developing customized electronic devices, electric circuits"
+    },
+    "paths": {
+        "content": "drafts/content",
+        "images": "drafts/pics",
+        "logo": "drafts/pics/logo.png",
+        "cache": "cache"
+    },
+    "security": {
+        "csrf_token_name": "csrf_token",
+        "session_name": "DIMGENT_SESSION",
+        "rate_limit": {
+            "enabled": true,
+            "max_attempts": 3,
+            "time_window": 3600
+        }
+    },
+    "mail": {
+        "config_file": "config/mail.json"
+    },
+    "recaptcha": {
+        "config_file": "config/recaptcha.json"
+    }
+}
