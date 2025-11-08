@@ -1,0 +1,51 @@
+{
+  "app_name": "Dimgent Technologies",
+  "tagline": "Electronics Development",
+  "base_url": "http://localhost:8000",
+  "site": {
+    "name": "Dimgent Technologies",
+    "tagline": "Electronics Development",
+    "description": "Electronics Development - Custom electronic devices development in Minsk, Belarus",
+    "location": "Minsk, Belarus",
+    "email": "info@dimgent.com",
+    "languages": ["en", "pl", "ru", "by"]
+  },
+  "navigation": [
+    {"name": "Home", "url": "/"},
+    {"name": "Products", "url": "/products"},
+    {"name": "Services", "url": "/services"},
+    {"name": "Projects", "url": "/projects"},
+    {"name": "Contacts", "url": "/contacts"},
+    {"name": "About", "url": "/about"}
+  ],
+  "features": [
+    {
+      "title": "20+ Years Experience",
+      "description": "Our specialists have been creating electronic devices for more than twenty years",
+      "icon": "award"
+    },
+    {
+      "title": "50+ Completed Projects",
+      "description": "Successfully completed projects across various industries",
+      "icon": "check-circle"
+    },
+    {
+      "title": "Cost Effective",
+      "description": "High-quality services at competitive prices",
+      "icon": "dollar-sign"
+    },
+    {
+      "title": "Quick Turn-around",
+      "description": "Fast project delivery without compromising quality",
+      "icon": "zap"
+    }
+  ],
+  "services_list": [
+    "Specification / Technical Specifications",
+    "Electric Circuits Development",
+    "Software Development",
+    "PCB Layouts/Drawings",
+    "Structure and Housing Design",
+    "Test Models / Prototyping"
+  ]
+}
